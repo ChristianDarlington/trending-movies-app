@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState, useEffect } from 'react';
+import MovieList from './MovieList';
+import Navbar from './Navbar';
+
+const API_KEY = `https://api.themoviedb.org/3/trending/all/day?api_key=7432733ca0b97edebd21bdd62d35ddd5`
 
 function App() {
+
+  const [movies, setMovies] = useState([])
+
+  useEffect(() => {
+    fetch(API_KEY)
+    .then(res => res.json())
+    .then(data => setMovies(data.results))
+  },[])
+
+    
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+     <MovieList movies={movies}/>
     </div>
   );
 }
