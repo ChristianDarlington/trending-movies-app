@@ -1,23 +1,17 @@
 import React from "react";
 
-const MovieList = ({movies}) => {
+const MovieList = ({movie}) => {
 
-  console.log(movies)
+  console.log(movie)
 
   return (
     <>
-    {movies.map((movie, index) => {
-      return (
-        <div key={movie.id} className='movie-container'>
-          <div className="moviePoster">
+        <div key={movie.id} className='movie'>
           <img src={"https://www.themoviedb.org/t/p/w440_and_h660_face/" + movie.poster_path} alt='movie'></img>
-          <h2>{movie.title || movie.name}</h2>
-          <p>{movie.overview}</p>
-
+          <h2 className="title">{movie.title || movie.name}</h2> 
+          <p className="info">{movie.overview}</p>
           </div>
-        </div>
-        )
-      })}
+       
     </>
   )
 }

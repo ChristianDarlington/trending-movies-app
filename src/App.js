@@ -17,10 +17,16 @@ function App() {
 
     
 
-  return (
-    <div className="App">
+  return (  
+    <div className="movie-container">
       <Navbar />
-     <MovieList movies={movies}/>
+      {
+        movies.map((movie, index) => {
+          return(
+            <MovieList movie={movie} key={movie.id}/>
+          )
+        })
+      }
     </div>
   );
 }
