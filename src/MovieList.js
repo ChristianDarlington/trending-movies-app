@@ -7,10 +7,17 @@ const MovieList = ({movies}) => {
   return (
     <>
     {movies.map((movie, index) => {
-        return (
-          <img key={movie.id} className="moviePoster" src={"https://www.themoviedb.org/t/p/w440_and_h660_face/" + movie.poster_path} alt='movie'></img>
+      return (
+        <div key={movie.id} className='movie-container'>
+          <div className="moviePoster">
+          <img src={"https://www.themoviedb.org/t/p/w440_and_h660_face/" + movie.poster_path} alt='movie'></img>
+          <h2>{movie.title || movie.name}</h2>
+          <p>{movie.overview}</p>
+
+          </div>
+        </div>
         )
-    })}
+      })}
     </>
   )
 }

@@ -1,7 +1,6 @@
 body {
   margin: 0;
   background-color: #0B2434;
-  padding: 20px;
   font-family: 'Karla', sans-serif;
 }
 
@@ -9,11 +8,42 @@ header {
   color: aliceblue;
   display: flex;
   align-items: center;
-  height: 65px;
-  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  background: black;
   padding: 20px;
+  justify-content: space-between;
 }
 
-.moviePoster {
-  width: 20%;
+.header-title {
+  margin-right: 6px;
 }
+
+ .header-title-weekly{
+margin-left: 60rem;
+}
+
+ .header-title-daily{
+margin-right: 3px;
+} 
+
+.movie-container {
+  display: flex;
+  }
+
+
+.moviePoster {
+  padding: 20px;
+  background-color: rgba(169, 169, 169, 0.261);
+  width: 30%;
+  margin-bottom: 20px;
+  
+}
+
+.movie {
+  flex-grow: 1;
+  margin: 10px;
+}
+
+.movie img {
+  width: 100%;
+}
+
