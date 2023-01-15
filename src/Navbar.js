@@ -1,12 +1,30 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <header>
-      <h2 className='header-title'>Movie Trends of the Year</h2>
-      <h2 className='header-title-weekly'>Weekly Trends</h2>
-      <h2 className='header-title-daily'>Daily Trends</h2>
-    </header>
+      <nav className='navbar'>
+        <div className='nav-container'>
+      <Link className='nav-logo' exact='true' to='/movielist'>
+        Movie and Tv Show Trends
+        </Link>
+
+        <ul className='nav-menu'>
+        <li className='nav-item'>
+      <Link className='nav-links' to='/weekly'>
+        Weekly Trends
+      </Link>
+        </li>
+
+        <li className='nav-item'>     
+      <Link className='nav-links' to='/daily'>
+        Daily Trends
+        </Link>
+        </li>
+        </ul>
+       
+        </div>
+      </nav>
   )
 }
 
