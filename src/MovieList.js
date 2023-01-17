@@ -2,9 +2,6 @@ import React from "react";
 
 const MovieList = ({movie}) => {
 
-  
-  
-
   return (
     <>
          <div key={movie.id} className='movie'>

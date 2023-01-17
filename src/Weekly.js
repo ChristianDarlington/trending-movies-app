@@ -1,8 +1,13 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 const Weekly = () => {
-  return (
+
+  console.log('hello')
+
+  return (    
     <div>
+      <Navbar />
       <h1>Weekly</h1>
     </div>
   )
