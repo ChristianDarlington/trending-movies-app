@@ -7,16 +7,16 @@ const Weekly = () => {
 
   const [movies, setMovies] = useState([])
 
- 
+  const API_KEY = `https://api.themoviedb.org/3/trending/movie/week?api_key=7432733ca0b97edebd21bdd62d35ddd5`
 
-  // useEffect(() => {
-  //   async function getData() {
-  //     const response = await fetch(API_KEY);
-  //     const data = await response.json();
-  //     setMovies(data.results);
-  //   }
-  //   getData();
-  // },[])
+  useEffect(() => {
+    async function getData() {
+      const response = await fetch(API_KEY);
+      const data = await response.json();
+      setMovies(data.results);
+    }
+    getData();
+  },[])
 
    
   // console.log(movies)
@@ -24,7 +24,7 @@ const Weekly = () => {
   return (    
     <div>
       <Navbar />
-      {/* <div className='movie-container'>
+      <div className='movie-container'>
       {
         movies && movies.map((movie, index) => {
           return(
@@ -32,7 +32,7 @@ const Weekly = () => {
             )
           })
         }
-        </div> */}
+        </div>
     </div>
   )
 }
