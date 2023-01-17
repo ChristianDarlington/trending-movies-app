@@ -15,14 +15,14 @@ const Navbar = ({MovieList}) => {
 
         <ul className='nav-menu'>
         <li className='nav-item'>
-      <Link className='nav-links' to='/weekly'>
-        Weekly Movie Trends
+      <Link className='nav-links' to='/daily'>
+        Daily TV Show Trends
       </Link>
         </li>
 
         <li className='nav-item'>     
-      <Link className='nav-links' to='/daily'>
-        Daily TV Show Trends
+      <Link className='nav-links' to='/weekly'>
+      Weekly Movie Trends
         </Link>
         </li>
         </ul>

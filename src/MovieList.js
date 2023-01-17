@@ -1,6 +1,6 @@
 import React from "react";
 
-const MovieList = ({movie}) => {
+const MovieList = ({movie}) => {;
 
   return (
     <>
