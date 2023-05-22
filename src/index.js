@@ -4,6 +4,7 @@ import App from './App';
 import Weekly from './Weekly'
 import Daily from './Daily';
 
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,7 +12,7 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/movielist",
+    path: "/",
     element: <App />,
   },
   {

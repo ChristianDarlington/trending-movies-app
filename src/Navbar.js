@@ -1,7 +1,6 @@
 import React from 'react'
-import { Link, Routes, Route } from 'react-router-dom'
-import Weekly from './Weekly'
-import Daily  from './Daily'
+import {Link} from 'react-router-dom'
+import MovieList from './MovieList'
 
 
 const Navbar = ({MovieList}) => {
@@ -9,7 +8,7 @@ const Navbar = ({MovieList}) => {
     <>
       <nav className='navbar'>
         <div className='nav-container'>
-      <Link className='nav-logo' exact='true' to='/movielist'>
+      <Link className='nav-logo' path='/' exact='true' to='/'>
         Movie and TV Show Trends
         </Link>
 
