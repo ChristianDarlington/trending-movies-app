@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import Weekly from './Weekly'
 import Daily from './Daily';
+import SearchMovieList from './Search/SearchMovieList'
+import './index.css';
+
 
 
 import {
@@ -22,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/daily",
     element: <Daily />,
+  },
+  {
+    path: "/search",
+    element: <SearchMovieList />,
   },
 ]);
 

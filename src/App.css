@@ -81,7 +81,7 @@ body {
 }
 
 .movie {
- width: 285px;
+ width: 335px;
  padding: 30px;
  background-color: #091d2a;
  border-radius: 20px;
@@ -112,5 +112,38 @@ width: 100%;
 
 .info{
   font-family: 'Oswald', sans-serif;
+ 
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: flex-start;
+    background-color: black;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .navbar-links.active {
+    max-height: 500px;
+  }
+
+  .nav-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+
+  .navbar-links {
+  
+  }
+
+  .nav-logo{
+    width: 100%;
+    font-size: medium;
+  }
+
  
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import MovieList from './MovieList'
 
 
-const Navbar = ({MovieList}) => {
+
+const Navbar = () => {
   return (
     <>
       <nav className='navbar'>
@@ -22,6 +22,11 @@ const Navbar = ({MovieList}) => {
         <li className='nav-item'>     
       <Link className='nav-links' to='/weekly'>
       Weekly Movie Trends
+        </Link>
+        </li>
+        <li className='nav-item'>     
+      <Link className='nav-links' to='/search'>
+      Search For Movie & Shows
         </Link>
         </li>
         </ul>
