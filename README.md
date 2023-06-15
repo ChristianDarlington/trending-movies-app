@@ -5,4 +5,4 @@ Movie Search: Search for movies by title, actor, genre, or any other relevant ke
 
 Trending Movies and TV Shows: Explore the trending movies and TV shows of the day or week. Stay informed about the latest popular content and discover new releases across various genres.
 
-Link: 
+Link: https://resplendent-cascaron-42edb6.netlify.app/
